@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice to Generative Video Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Voice-to-Generative Video</h1>
+  <p class="subtitle">பேசும் வார்த்தைக்கு ஏற்ப திரையில் அனிமேஷன் உருவாகி வீடியோவாகப் பதிவாகும்!</p>
+
+  <div class="keyword-tags">
+    <span>Rain / மழை</span>
+    <span>Space / Stars / விண்வெளி</span>
+    <span>Fire / நெருப்பு</span>
+    <span>Ocean / Waves / கடல்</span>
+    <span>Sun / வெளிச்சம்</span>
+  </div>
+
+  <div class="canvas-wrapper">
+    <canvas id="renderCanvas" width="1280" height="720"></canvas>
+  </div>
+
+  <div class="status-panel">
+    நிலை: <span id="statusText">காத்திருக்கிறது...</span>
+  </div>
+
+  <div class="action-buttons">
+    <button id="startBtn" class="btn primary">🎤 Start Recording</button>
+    <button id="stopBtn" class="btn danger" disabled>⏹ Stop Recording</button>
+    <button id="downloadBtn" class="btn success" disabled>⬇ Download Video</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
